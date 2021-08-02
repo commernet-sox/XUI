@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary">按钮</button>
+    <button class="btn btn-lg" type="button">大尺寸按钮</button>
+    <button class="btn btn-sm " type="button">按钮</button>
+    <button class="btn btn-mini " type="button">按钮</button>
+    <button class="btn btn-block " type="button">按钮</button>
+    <button class="btn " type="button">默认</button>
+    <button class="btn btn-primary " type="button">主要</button>
+    <button class="btn btn-info " type="button">信息</button>
+    <button class="btn btn-success " type="button">成功</button>
+    <button class="btn btn-warning " type="button">警告</button>
+    <button class="btn btn-danger " type="button">危险</button>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn active">
+            <input type="checkbox" checked> 多选1
+        </label>
+        <label class="btn">
+            <input type="checkbox"> 多选2
+        </label>
+        <label class="btn">
+            <input type="checkbox"> 多选3
+        </label>
+    </div>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input type="radio" name="options" id="option1" checked> 单选1
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="option2"> 单选2
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="option3"> 单选3
+        </label>
+    </div>
+    <button id="loadingBtnExample" type="button" class="btn btn-primary" data-loading-text="正在加载...">加载状态</button>
+    <button class="btn btn-link" type="button">链接按钮</button>
+    <button class="btn " type="button"><i class="icon icon-star"></i> 带图标的按钮</button>
+</body>
+<!-- <script src="../assets/jquery-3.4.1.min.js"></script> -->
+<script src="../assets/jquery.js"></script>
+<script src="./js/index.js"></script>
+<!-- <script src="./zui.js"></script> -->
+<script>
+    $('#loadingBtnExample').on('click', function () {
+        var $btn = $(this);
+        $btn.button('loading');
+
+        // 此处使用 setTimeout 来模拟复杂功能逻辑
+        setTimeout(function () {
+            $btn.button('reset');
+        }, 2000);
+    });
+</script>
+
+</html>
