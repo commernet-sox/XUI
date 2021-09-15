@@ -1,0 +1,21 @@
+.nav-primary > li > a > .label,
+.btn .label {
+  position: relative;
+  top: -1px;
+}
+.btn-primary .label,
+.btn-success .label,
+.btn-info .label,
+.btn-danger .label,
+.btn-warning .label {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.list-group-item.active > .label,
+.nav-primary > .active > a > .label,
+.nav-pills > .active > a > .label {
+  color: #3949AB;
+  background-color: #fff;
+}
+.nav > li > a > .label {
+  margin-left: 3px;
+}

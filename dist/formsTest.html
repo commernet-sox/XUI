@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms  不完善</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <input type="text" class="form-control" placeholder="用户名">
+    <input type="email" class="form-control" placeholder="电子邮件">
+    <textarea class="form-control" rows="3" placeholder="可以输入多行文本"></textarea>
+    <input type="file" class="form-control" value="">
+    <select class="form-control">
+        <option value="">请选择一种水果</option>
+        <option value="apple">苹果</option>
+        <option value="banana">香蕉</option>
+        <option value="orange">桔子</option>
+        ...
+      </select>
+      <select class="form-control" multiple>
+        <option value="">请选择所有爱吃的水果</option>
+        <option value="apple">苹果</option>
+        <option value="banana">香蕉</option>
+        <option value="orange">桔子</option>
+        <option value="orange">西瓜</option>
+      </select>
+
+      <input class="form-control" type="text" placeholder="此文本框被禁用" disabled>
+      <input class="form-control" type="text" placeholder="此文本框只读" readonly>
+      <input class="form-control form-focus" autofocus type="text" placeholder="请激活此文本框">
+      <div class="has-warning">
+        <input class="form-control" type="text" placeholder="Warning...">
+      </div>
+      <div class="has-error">
+        <input class="form-control" type="text" placeholder="Warning...">
+      </div>
+      <div class="has-success">
+        <input class="form-control" type="text" placeholder="Warning...">
+      </div>
+
+      <input class="form-control input-lg" type="text" placeholder="较大尺寸的文本框">
+      <input class="form-control" type="text" placeholder="默认尺寸的文本框">
+      <input class="form-control input-sm" type="text" placeholder="小尺寸的文本框">
+
+      <div class="row">
+        <div class="col-xs-3">
+          <input type="text" class="form-control" placeholder=".col-xs-2">
+        </div>
+        <div class="col-xs-4">
+          <input type="text" class="form-control" placeholder=".col-xs-3">
+        </div>
+        <div class="col-xs-5">
+          <input type="text" class="form-control" placeholder=".col-xs-4">
+        </div>
+      </div>
+</body>
+<script src="../assets/jquery.js"></script>
+<script src="./js/index.js"></script>
+</html>

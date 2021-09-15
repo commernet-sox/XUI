@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .load-indicator:after {
+            content: '\e97b'
+        }
+    </style>
+</head>
+
+<body>
+    <div class="load-indicator loading" style="width: 100px; height: 100px; background: #eee"></div>
+    <div data-loading="正在加载..." class="load-indicator loading" style="width: 100px; height: 100px; background: #eee">
+    </div>
+    使用 JS 控制
+    <div data-loading="正在加载..." class="load-indicator"
+        style="width: 100px; height: 100px; background: #eee; margin-bottom: 10px" id="loadIndicator1"></div>
+    <button type="button" class="btn btn-primary" id="loadIndicator1ToggleBtn">显示/隐藏正在加载状态</button>
+    修改图标
+    <div class="load-indicator loading" style="width: 100px; height: 100px; background: #eee"></div>
+    在按钮上使用
+    <button type="button" class="btn load-indicator loading">按钮示例</button>
+    在面板中使用
+    <div class="panel load-indicator loading" data-loading="正在处理...">
+        <div class="panel-heading" contenteditable="">面板标题</div>
+        <div class="panel-body" contenteditable="">面板内容</div>
+    </div>
+</body>
+<script src="../assets/jquery.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    $('#loadIndicator1ToggleBtn').on('click', function () {
+        $('#loadIndicator1').toggleClass('loading');
+    });
+</script>
+
+</html>

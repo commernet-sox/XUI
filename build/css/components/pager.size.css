@@ -1,0 +1,30 @@
+.pager-lg > li > a,
+.pager-lg > li > span {
+  padding: 10px 16px;
+  font-size: 16px;
+}
+.pager-lg > li:first-child > a,
+.pager-lg > li:first-child > span {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.pager-lg > li:last-child > a,
+.pager-lg > li:last-child > span {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.pager-sm > li > a,
+.pager-sm > li > span {
+  padding: 2px 8px;
+  font-size: 12px;
+}
+.pager-sm > li:first-child > a,
+.pager-sm > li:first-child > span {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.pager-sm > li:last-child > a,
+.pager-sm > li:last-child > span {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}

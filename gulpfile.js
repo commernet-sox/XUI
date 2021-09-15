@@ -21,9 +21,6 @@ gulp.task('lib',function () {
         .pipe(gulp.dest(app.distPath+'lib'))
         .pipe(connect.reload()) //当内容发生改变时， 重新加载。
 });
-
-
-
 /*2.定义任务 把所有html文件移动另一个位置*/
 gulp.task('html',function () {
     /*要操作哪些文件 确定源文件地址*/

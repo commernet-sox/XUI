@@ -1,0 +1,92 @@
+table {
+  max-width: 100%;
+  background-color: transparent;
+  font-size: inherit;
+}
+caption {
+  padding: 8px;
+  color: #808080;
+  text-align: left;
+}
+th {
+  text-align: left;
+}
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 1.53846154;
+  vertical-align: top;
+  border-bottom: 1px solid #dddddd;
+  transition: background 0.2s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 1px solid #dddddd;
+  background-color: #f1f1f1;
+  color: #353535;
+  font-weight: bold;
+}
+.table > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+.table-fixed {
+  table-layout: fixed;
+}
+.table-fixed th,
+.table-fixed td {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.table-fixed tfoot > tr > th,
+.table-fixed tfoot > tr > td,
+.table-fixed .nofixed,
+.table-fixed .nofixed {
+  overflow: visible;
+}
+.table-borderless thead > tr > th,
+.table-borderless th,
+.table-borderless td {
+  border: none;
+}
+.table-auto {
+  width: auto;
+  max-width: 100%;
+}
+.table-condensed th,
+.table-condensed td {
+  padding: 5px;
+}
+.table-bordered {
+  border: 1px solid #dddddd;
+}
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dddddd;
+}
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #ECEFF1;
+}
+table col[class*="col-"] {
+  float: none;
+  display: table-column;
+}
+table td[class*="col-"],
+table th[class*="col-"] {
+  float: none;
+  display: table-cell;
+}
+.table tr > td.active,
+.table tr > th.active,
+.table tr.active > td,
+.table tr.active > th {
+  background-color: #ffe7bc;
+}

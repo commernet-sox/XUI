@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <code>&lt;code&gt;</code>
+
+    <h1 class="code">HelloCode();</h1>
+
+    按 <kbd>Ctrl</kbd> + <kbd>C</kbd> 来复制示例代码，按 <kbd>Ctrl + V</kbd> 来粘贴代码。
+
+    <pre><code>&lt;p&gt;Hello world!&lt;/p&gt;</code></pre>
+
+    <pre class="pre-scrollable">
+        // 这是一段较长的代码
+        // 用来演示 .pre-scrollable
+        // 当代码行数超出时会出现垂直滚动条
+        // ============================================================================================================
+
+function test() {
+  var x = 1;
+  var y = 2;
+
+  var z1 = xx + 2x + 1;
+  var z2 = yy + 2y + 1;
+  var z  = z1z1 + z2z2;
+
+  var o  = zz + 2z + 1;
+  var p  = (o/2 - z*z + 1)/o;
+  var q  = (o + p)/z;
+
+  console.log(x);
+  console.log(y);
+  console.log(z);
+  console.log(q);
+}
+
+test();
+        </pre>
+
+        <!-- 为 pre 增加 prettyprint CLASS -->
+<pre class="prettyprint linenums">
+    ...
+    </pre>
+</body>
+<script src="../assets/jquery.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

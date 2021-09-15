@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputGroup 不完善</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="用户名">
+        <span class="input-group-addon"><i class="icon icon-heart"></i></span>
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon">姓名</span>
+        <input type="text" class="form-control" placeholder="姓氏">
+        <span class="input-group-addon fix-border fix-padding"></span>
+        <input type="text" class="form-control" placeholder="名字">
+    </div>
+
+    <!-- 复选框 -->
+    <div class="input-group">
+        <span class="input-group-addon">
+            <input type="checkbox">
+        </span>
+        <input type="text" class="form-control">
+    </div>
+
+    <!-- 单选框 -->
+    <div class="input-group">
+        <span class="input-group-addon">
+            <input type="radio">
+        </span>
+        <input type="text" class="form-control">
+    </div>
+
+    <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button">搜索</button>
+        </span>
+    </div>
+
+    <div class="input-group">
+        <input type="text" class="form-control">
+        <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">选项 <span
+                    class="caret"></span></button>
+            <ul class="dropdown-menu pull-right" role="menu">
+                <li><a href="#">选项</a></li>
+                <li><a href="#">另一个选项</a></li>
+                <li><a href="#">更多选项</a></li>
+                <li class="divider"></li>
+                <li><a href="#">特别内容</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="input-group">
+        <select class="form-control">
+            <option value="eat">吃饭</option>
+            <option value="sleep">睡觉</option>
+            <option value="code">写代码</option>
+        </select>
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button">搜索</button>
+        </span>
+    </div>
+
+    <div class="input-group">
+        <input type="text" class="form-control">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default" tabindex="-1">主要选项</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+            <span class="caret"></span>
+            <span class="sr-only">更多选项</span>
+          </button>
+          <ul class="dropdown-menu pull-right" role="menu">
+            <li><a href="#">选项</a></li>
+            <li><a href="#">另一个选项</a></li>
+            <li><a href="#">更多选项</a></li>
+            <li class="divider"></li>
+            <li><a href="#">特别内容</a></li>
+          </ul>
+        </div>
+      </div>
+</body>
+<script src="../assets/jquery.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
